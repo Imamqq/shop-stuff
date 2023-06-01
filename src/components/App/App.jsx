@@ -6,14 +6,15 @@ import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 import Sidebar from '../Sidebar/Sidebar';
 import { getCategories } from '../../Features/categories/categoriesSlice';
+import { getProducts } from '../../Features/products/productsSlice';
 
 
 function App() {
 
     const dispatch = useDispatch()
-    console.log("jjj")
     useEffect(() => {
         dispatch(getCategories())
+        dispatch(getProducts())
     }, [dispatch])
 
     return (
