@@ -7,6 +7,7 @@ import Footer from '../Footer/Footer';
 import Sidebar from '../Sidebar/Sidebar';
 import { getCategories } from '../../Features/categories/categoriesSlice';
 import { getProducts } from '../../Features/products/productsSlice';
+import UserForm from '../User/UserForm';
 
 
 function App() {
@@ -20,7 +21,7 @@ function App() {
     return (
         <div className='app'>
             <Header />
-
+            <UserForm />
             <div className='container'>
                 <Sidebar />
                 <AppRoutes />
