@@ -73,7 +73,7 @@ const Header = () => {
 						<div className={styles.box}>
 							{isLoading
 								? 'Loading'
-								: !data
+								: !data.length
 									? "No results"
 									: data.map(({ title, images, id }) => {
 										return (
